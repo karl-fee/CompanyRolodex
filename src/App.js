@@ -41,8 +41,6 @@ class App extends Component {
   };  
 
   render() {
-    //console.log("02-Render");
-
     //destructuring
     const { employees, searchField } = this.state;
     const { onSearchChange } = this;
@@ -53,7 +51,7 @@ class App extends Component {
 
     return (
       <div className="App">
-
+        <h1 className='app-title'>Company Rolodex</h1>
         <SearchBox
           className='search-box'
           onChangeHandler={onSearchChange}
